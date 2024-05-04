@@ -9,8 +9,13 @@ import {
 } from 'react-native';
 import Entypo from 'react-native-vector-icons/Entypo';
 import Slider_card from '../components/Slider_card';
+import {useMyContext} from '../App';
+
 const Home = () => {
   const isDarkMode = useColorScheme() === 'dark';
+  const {count, incrementCount} = useMyContext();
+  console.log('count', count);
+
   return (
     <ScrollView>
       <SafeAreaView style={styles.container}>
@@ -21,20 +26,23 @@ const Home = () => {
                 styles.Text_css,
                 isDarkMode ? styles.whiteText : styles.darkText,
               ]}>
-              {'Name of song'}
+              {count || 'Name of song'}
             </Text>
           </View>
-          <Entypo
-            name="chevron-right"
-            size={30}
-            color={isDarkMode ? styles.whiteText : styles.darkText}
-          />
+          <View onTouchStart={incrementCount}>
+            <Entypo
+              name="chevron-right"
+              size={30}
+              color={isDarkMode ? styles.whiteText : styles.darkText}
+            />
+          </View>
         </View>
         <Slider_card />
       </SafeAreaView>
     </ScrollView>
   );
 };
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
