@@ -7,7 +7,7 @@ const App_stack = () => {
   return (
     <NativeRouter>
       <Routes>
-        <Route exact path="/" component={<Home />} />
+        <Route exact path="/" element={<Home />} />
       </Routes>
     </NativeRouter>
   );
