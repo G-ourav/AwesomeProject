@@ -1,10 +1,15 @@
 import {View, Text} from 'react-native';
 import React from 'react';
 
-const Log_in = () => {
+const Log_in = ({isLogIn, setIsLogIn}) => {
   return (
     <View>
-      <Text>Log_in</Text>
+      <View
+        onTouchStart={() => {
+          setIsLogIn(!isLogIn);
+        }}>
+        <Text>sfsd</Text>
+      </View>
     </View>
   );
 };
