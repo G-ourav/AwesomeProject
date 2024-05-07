@@ -20,7 +20,6 @@ const Log_in = ({isLogIn, setIsLogIn}) => {
       user_pass: password,
     };
     console.log(email, password, userData);
-
     sign_in_user(userData)
       .then(data => {
         console.log(data);
