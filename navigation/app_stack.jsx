@@ -3,7 +3,7 @@ import React from 'react';
 import {NativeRouter, Routes, Route} from 'react-router-native';
 import Leave_attendance from '../screens/leave_attendance';
 import Chat from '../screens/chat';
-import Profile from '../screens/profile';
+import Profile from '../screens/Profile';
 import Home from '../screens/home';
 import Layout from '../screens/layout';
 
