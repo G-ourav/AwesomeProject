@@ -7,7 +7,7 @@ const Layout = () => {
   const screenHeight = Dimensions.get('window').height;
   return (
     <ScrollView>
-      <View style={[Styles.container, {height: screenHeight * 0.98}]}>
+      <View style={[Styles.container, {height: screenHeight}]}>
         <Outlet />
         <View style={Styles.bottumBar}>
           <Bottum_bar />
