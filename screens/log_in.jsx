@@ -141,7 +141,7 @@ const Style = StyleSheet.create({
   },
   loginText: {
     // color: 'white',
-    fontSize: 20,
+    fontSize: 14,
   },
   privacyText: {
     color: 'white',
