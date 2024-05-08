@@ -6,7 +6,7 @@ import Auth_stack from './navigation/auth_stack';
 const MyContext = createContext();
 
 function App() {
-  const [isLogIn, setIsLogIn] = useState(false);
+  const [isLogIn, setIsLogIn] = useState(true);
 
   // Step 2: Create a provider component
   const MyProvider = ({children}) => {
