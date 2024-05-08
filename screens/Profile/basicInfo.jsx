@@ -52,11 +52,11 @@ const Styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   key_: {
-    fontSize: 20,
+    fontSize: 14,
     color: '#292929',
   },
   value_: {
-    fontSize: 20,
+    fontSize: 14,
     color: '#292929',
   },
 });
