@@ -39,7 +39,7 @@ const Styles = StyleSheet.create({
   },
 
   Text_css: {
-    fontSize: 23,
+    fontSize: 14,
     color: '#ffda85',
     marginHorizontal: 'auto',
     fontStyle: 'normal',
