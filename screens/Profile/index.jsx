@@ -23,7 +23,7 @@ const Styles = StyleSheet.create({
   },
   text_: {
     flex: 1,
-    fontSize: 20,
+    fontSize: 14,
     color: '#ffda85',
   },
   titleofpage: {
