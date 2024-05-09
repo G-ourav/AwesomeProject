@@ -33,6 +33,7 @@ const Bottum_bar = () => {
               color="#ffda85"
             />
             <Text style={Styles.iconText}>Attendance</Text>
+            <Text style={Styles.iconText}>Attendance</Text>
           </View>
         </Link>
         <Link to="/leave_attendance">
